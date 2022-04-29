@@ -2,7 +2,7 @@ import datetime as dt
 import os
 import csv
 
-#filename variable to path to file
+#filename variable results spreadsheet & analysis doc
 file_to_load = os.path.join("Resources","election_results.csv")
 file_to_save = os.path.join("Analysis","election_analysis.txt")
 
@@ -12,16 +12,12 @@ with open(file_to_load) as election_data:
         # read file object with reader function
         file_reader = csv.reader(election_data)
 
-        #exclude headers
+        # print header
         headers = next(file_reader)
-
-        for row in file_reader:
-
-            
-
-            
+        print(headers)
 
 
+      
 
 # open election results and read the file
 
